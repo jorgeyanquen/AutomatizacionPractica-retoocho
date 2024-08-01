@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1baca8e-8cdb-45fc-ad66-9444e01c8371" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/practicaocho/Step/ZohoCRMLoginValidationStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/practicaocho/pages/ZohoCRMLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practicaocho/Step/ZohoCRMLoginValidationStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practicaocho/Step/ZohoCRMLoginValidationStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practicaocho/definitions/ZohoCRMValidationDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practicaocho/definitions/ZohoCRMValidationDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practicaocho/pages/ZohoCRMLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practicaocho/pages/ZohoCRMLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ZohoCRMValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ZohoCRMValidation.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
