@@ -2,6 +2,7 @@ package com.practicaocho.definitions;
 
 import com.practicaocho.Step.ZohoCRMLoginValidationStep;
 import com.practicaocho.Step.ZohoCRMSingInValidationStep;
+import com.practicaocho.Step.ZohoCRMtaskValidationStep;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -14,6 +15,9 @@ public class ZohoCRMValidationSingIn {
 
     @Steps
     ZohoCRMSingInValidationStep zohoCRMSingInValidationStep;
+
+    @Steps
+    ZohoCRMtaskValidationStep zohoCRMtaskValidationStep;
 
     @Given("Entering the Zoho CRM page")
     public void Entering_the_Zoho_CRM_page(){
@@ -36,8 +40,17 @@ public class ZohoCRMValidationSingIn {
 
     }
     @When("I create a Task")
-    public void i_create_a_task() {
+    public void i_create_a_task(DataTable dtDatosForm2) {
+        List<List<String>> cells = dtDatosForm2.cells();
 
+        for(int i=1; i<cells.size(); i++){
+            zohoCRMtaskValidationStep.task(cells, i);
+            try{
+                Thread.sleep(5000);
+            }catch(InterruptedException e){
+
+            }
+        }
     }
     @Then("I verify that the task was successfully created")
     public void i_verify_that_the_task_was_successfully_created() {

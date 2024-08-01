@@ -15,4 +15,6 @@
       | email1                   | password1  |
       | jorgeyanquen63@gmail.com | 1049631056 |
       When I create a Task
+      | subject | date       | status      | priority | description |
+      | llamada | 31/08/1992 | Not Started | High     | Task 1      |
       Then I verify that the task was successfully created
