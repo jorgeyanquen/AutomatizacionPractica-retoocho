@@ -10,6 +10,9 @@
 
     @CasoExitosoCreaciontask
     Scenario: Successfully log in to the Zoho CRM page and create the first task
-      Given I logged into Zoho CRM with a registered user
+      Given Entering the Zoho CRM page
+      And I logged into Zoho CRM with a registered user
+      | email1                   | password1  |
+      | jorgeyanquen63@gmail.com | 1049631056 |
       When I create a Task
       Then I verify that the task was successfully created
